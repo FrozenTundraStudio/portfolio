@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="scripts.js"></script>
+    <title>Nicholas Much</title>
+</head>
+<body>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="projects" id="projects">
+        <div class="gallery-item" id="fcsllc">
+            <img src="img/fcsllclogo.avif" alt="placeholder-alt" width="600" height="400" 
+            onclick="openModal('modal1', 'Faith Cleaning Services LLC Website', 'A website made for Faith Cleaning Services LLC')">
+            <div class="img-description">Faith Cleaning Services LLC Website</div>
+        </div>
+
+        <div class="gallery-item" id="finance-tracker">
+            <img src="img/IncomeWindow.png" alt="placeholder-alt" width="600" height="400"
+            onclick="openModal('modal2', 'Finance Tracker', 'A desktop application used for keeping track of income, bills, subscriptions, and other monthly expenses.')">
+            <div class="img-description">Finance Tracker</div>
+        </div>
+
+        <div class="gallery-item" id="placeholder">
+            <img src="img/OnTheLake.jpg" alt="placeholder-alt" width="600" height="400"
+            onclick="openModal('modal3', 'Placeholder Title', 'Placeholder Description')">
+            <div class="img-description">Placeholder</div>
+        </div>
+
+        <div id="modal1" class="modal" onclick="closeModal('modal1')">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-content">
+                <img src="img/Portfolio-FCSLLC.jpg" alt="placeholder-alt" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal" onclick="closeModal('modal2')">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-content">
+                <img src="img/IncomeWindow.png" alt="placeholder-alt" class="modal-image">
+                <div class="caption">Finance Tracker</div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal" onclick="closeModal('modal3')">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-content">
+                <img src="img/OnTheLake.jpg" alt="placeholder-alt" class="modal-image">
+                <div class="caption"></div>
+                <div class="caption-description"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2026 Nicholas Much. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+            <a href="#" target="_blank" class="social" id="github" width="1" height="1"></a>
+            <a href="#" target="_blank" class="social" id="linkedin" width="1" height="1"></a>
+        </div>
+        <div class="footer-right">
+            <p>nickmuch23@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
