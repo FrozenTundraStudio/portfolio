@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    max-width: 100vw;
     min-height: 100vh;
     height: 100%;
     min-width: 100vw;
@@ -31,10 +32,15 @@ body {
 ul li a {
     display: block;
     color: aliceblue;
-    padding: 2vh 1.5vw 1vh 1.5vw;
+    padding: 2vw 1.5vh 1vw 1.5vh;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.25rem;
+}
+@media (max-width: 400px) {
+    ul li a {
+        padding: 2vw 1vh 2vw 1vh;
+    }
 }
 
 ul li a:hover {
@@ -104,6 +110,7 @@ footer p {
 @media (max-width: 768px) {
     footer p {
         font-size: 1.25vh;
+        margin-right: 2vw;
     }
 }
 
@@ -302,7 +309,7 @@ footer p {
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
-        padding-right: 3vw;
+        padding-right: 6vw;
     }
     .service {
         width: 80vw;
@@ -313,7 +320,7 @@ footer p {
     text-align: center;
     border-left: thick solid aliceblue;
     border-right: thick solid aliceblue;
-    width: 33vw;
+    width: 100%;
     padding-bottom: 3vh;
 }
 
@@ -359,9 +366,9 @@ footer p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 4vh;
-    font-weight: 100;
+    font-weight: 200;
     color: aliceblue;
-    text-shadow: 2px 2px gray;
+    text-shadow: 1px 1px gray;
 }
 
 .contact-form {
