@@ -372,14 +372,13 @@ footer p {
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     color: aliceblue;
     border: 2px solid aliceblue;
     border-radius: 10px;
     margin: auto;
-    width: auto;
-    height: auto;
+    padding: 10px;
 }
 @media (max-width: 768px) {
     .contact-form {
@@ -391,15 +390,8 @@ footer p {
     }
 }
 
-.contact-column {
-    text-align: left;
-    padding: 1vw 1vh;
-    width: 90%;
-    height: auto;
-}
-
-.contact-row {
-    margin: 1vw;
+.contact-form div {
+    padding: 1rem;
 }
 
 .contact-form label {
@@ -411,5 +403,24 @@ footer p {
 .contact-form input {
     width: 100%;
     height: 3vh;
+    font-size: 2vh;
+}
+
+.message {
+    column-span:all;
+}
+
+.bottom {
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    margin: auto;
+}
+
+#send {
+    margin: auto;
+    max-width: 25rem;
+    width: 100%;
+    height: 5vh;
     font-size: 2vh;
 }
