@@ -382,7 +382,7 @@ footer p {
 }
 @media (max-width: 768px) {
     .contact-form {
-        flex-direction: column;
+        grid-template-columns: auto;
         margin-bottom: 3vh;
     }
     .contact-top {
@@ -415,11 +415,12 @@ footer p {
     max-width: 100vw;
     width: 100%;
     margin: auto;
+    margin-bottom: 2vh;
 }
 
 #send {
     margin: auto;
-    max-width: 25rem;
+    max-width: 10rem;
     width: 100%;
     height: 5vh;
     font-size: 2vh;
